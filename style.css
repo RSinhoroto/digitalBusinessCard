@@ -1,0 +1,20 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+
+  background: lightblue;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+a {
+  color: darkgray;
+  text-decoration: none;
+}
