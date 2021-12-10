@@ -21,7 +21,7 @@
             <img src="images/logo.svg" alt="Selo Rocketseat" />
           </span>
 
-          <img src="http://lorempixel.com/185/185/people/" alt="Foto Pessoal" />
+          <img src="https://placekitten.com/185/185" alt="Foto Pessoal" />
         </div>
         <h1>Rafa Sinhoroto</h1>
         <a href="https://github.com/RSinhoroto" target="_blank">
@@ -30,29 +30,51 @@
 
         <p>Wannabe Dancer with programming knowledge on the side</p>
 
-        <ul>
-          <li>
+        <ul id="socialLinks">
+          <li class="youtube">
             <a href="http://youtube.com" target="_blank"
               ><img src="images/youtube.svg" alt="ícone Youtube" />
             </a>
           </li>
-          <li>
+          <li class="facebook">
             <a href="http://facebook.com" target="_blank"
               ><img src="images/facebook.svg" alt="ícone Facebook"
             /></a>
           </li>
-          <li>
-            <a href="https://www.instagram.com/rsinhoroto/" target="_blank"
+          <li class="instagram">
+            <a href="https://instagram.com" target="_blank"
               ><img src="images/instagram.svg" alt="ícone Instagram"
             /></a>
           </li>
-          <li>
-            <a href="http://twitter.com/rsinhoroto" target="_blank"
+          <li class="twitter">
+            <a href="http://twitter.com/" target="_blank"
               ><img src="images/twitter.svg" alt="ícone Twitter"
             /></a>
           </li>
         </ul>
       </div>
     </main>
+
+    <script>
+    const socialMediaUsername = {
+      github: 'RSinhoroto',
+      youtube: '',
+      facebook: '',
+      instagram: 'rsinhoroto',
+      twitter: 'rsinhoroto',
+      tiktok: ''
+    }
+
+    function updateSocialMediaLinks() {
+      for (let li of socialLinks.children) {
+        const social = li.getAttribute('class')
+
+        li.children[0].href = `https://${social}.com/${socialMediaUsername[social]}`
+      }
+    }
+
+    updateSocialMediaLinks()
+    </script>
+
   </body>
 </html>
