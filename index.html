@@ -21,14 +21,15 @@
             <img src="images/logo.svg" alt="Selo Rocketseat" />
           </span>
 
-          <img src="https://placekitten.com/185/185" alt="Foto Pessoal" />
+          <img id="cardPhoto" src="https://placekitten.com/185/185" alt="Foto Pessoal" />
         </div>
-        <h1>Rafa Sinhoroto</h1>
-        <a href="https://github.com/RSinhoroto" target="_blank">
-          <img src="images/github.svg" alt="ícone Github" />   RSinhoroto
+        <h1 id="cardName">Rafa Sinhoroto</h1>
+        <a id="cardLink" href="https://github.com/RSinhoroto" target="_blank">
+          <img id="cardLinkImg" src="images/github.svg" alt="ícone Github" /> 
+          <span id="cardUser">RSinhoroto</span>
         </a>
 
-        <p>Wannabe Dancer with programming knowledge on the side</p>
+        <p id="cardBio">Wannabe Dancer with programming knowledge on the side</p>
 
         <ul id="socialLinks">
           <li class="youtube">
@@ -55,26 +56,7 @@
       </div>
     </main>
 
-    <script>
-    const socialMediaUsername = {
-      github: 'RSinhoroto',
-      youtube: '',
-      facebook: '',
-      instagram: 'rsinhoroto',
-      twitter: 'rsinhoroto',
-      tiktok: ''
-    }
-
-    function updateSocialMediaLinks() {
-      for (let li of socialLinks.children) {
-        const social = li.getAttribute('class')
-
-        li.children[0].href = `https://${social}.com/${socialMediaUsername[social]}`
-      }
-    }
-
-    updateSocialMediaLinks()
-    </script>
+    <script  src="main.js"></script>
 
   </body>
 </html>
