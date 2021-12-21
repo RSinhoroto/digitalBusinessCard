@@ -4,7 +4,7 @@ const socialMediaUsername = {
   facebook: '',
   instagram: 'rsinhoroto',
   twitter: 'rsinhoroto',
-  tiktok: ''
+  tiktok: 'rsinhoroto'
 }
 
 function updateSocialMediaLinks() {
@@ -30,6 +30,8 @@ function getGithubUserInfo () {
     cardLink.href = data.html_url
     cardPhoto.src = data.avatar_url
     cardUser.textContent = data.login
+
+    cardTitle.textContent = `${data.name.split(' ')[0]}'s Digital Business Card`
   })
 
 }
