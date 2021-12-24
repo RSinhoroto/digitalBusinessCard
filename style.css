@@ -12,6 +12,7 @@ body {
 body {
   display: grid;
   place-items: center;  
+  margin: 0;
 }
 
 main {
@@ -19,8 +20,6 @@ main {
   width: 100vw;
   min-height: 812px;
   height: 100vh;
-
-  /*TODO: screen for desktop & tablet*/
 }
 
 .container {
@@ -87,3 +86,14 @@ ul {
 
   justify-content: center;
 }
+
+
+@media (min-width: 1100px) {
+  main {
+    background: url("images/background.svg");
+    width: 375px;
+    height: 812px;
+  }
+}
+
+/*TODO: add tablet display*/
