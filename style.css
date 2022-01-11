@@ -16,7 +16,7 @@ body {
 }
 
 main {
-  background: url("images/background.svg") no-repeat center/cover;
+  background: url("/images/background_blue.svg") no-repeat center/cover;
   width: 100vw;
   min-height: 812px;
   height: 100vh;
@@ -87,13 +87,61 @@ ul {
   justify-content: center;
 }
 
+/*TODO: fix card resizing causing profile picture to disalign*/
 
-@media (min-width: 1100px) {
-  main {
-    background: url("images/background.svg");
-    width: 375px;
-    height: 812px;
+
+@media (min-width: 700px) {
+
+  :root {
+    font-size: 62.5%; /*1 rem equivale a 10px*/
   }
-}
 
-/*TODO: add tablet display*/
+  main {
+    background: url("/images/background_blue_desktop.svg") no-repeat center/cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .container {
+    background: url("/images/background_blue.svg") center/cover;
+    max-width: 358px;
+    height: 540px;
+  }
+
+  .avatar {
+    margin-top: 14rem;
+    padding-top: 5.4rem;
+
+    width: 16rem;
+  }
+
+  .avatar span {
+    top: 3.9rem;
+  }
+
+  .avatar > img {
+    width: 16rem;
+    height: 18.4rem;
+  }
+
+  .container h1 {
+    margin-top: 2.4rem;
+
+    font: 700 2.4rem Roboto;
+  }
+
+  .container a {
+    font: 400 1.6rem Roboto;
+
+    gap: 1.2rem;
+  }
+
+  .container p {
+    font: 400 1.4rem Roboto;
+    max-width: 300px;
+    margin: 3.2rem auto 0 auto;
+  }
+
+  /*TODO: create strap element*/
+  
+}
