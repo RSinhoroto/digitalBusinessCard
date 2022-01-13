@@ -16,7 +16,7 @@ body {
 }
 
 main {
-  background: url("/images/background_blue.svg") no-repeat center/cover;
+  background: url("images/background_blue.svg") no-repeat center/cover;
   width: 100vw;
   min-height: 812px;
   height: 100vh;
@@ -97,13 +97,13 @@ ul {
   }
 
   main {
-    background: url("/images/background_blue_desktop.svg") no-repeat center/cover;
+    background: url("images/background_blue_desktop.svg") no-repeat center/cover;
     height: 100%;
     width: 100%;
   }
 
   .container {
-    background: url("/images/background_blue.svg") center/cover;
+    background: url("images/background_blue.svg") center/cover;
     max-width: 358px;
     height: 540px;
   }
