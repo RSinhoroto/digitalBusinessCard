@@ -4,7 +4,7 @@ const socialMediaUsername = {
   facebook: '',
   instagram: 'rsinhoroto',
   twitter: 'rsinhoroto',
-  tiktok: 'rsinhoroto'
+  tiktok: '@rsinhoroto'
 }
 
 function updateSocialMediaLinks() {
