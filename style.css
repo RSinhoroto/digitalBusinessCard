@@ -26,6 +26,7 @@ main {
   position: absolute;
   z-index: 2;
   left: calc(50% - 32px);
+  visibility: hidden;
 }
 
 .card-strap-pocket {
@@ -33,6 +34,7 @@ main {
   z-index: 1;
   top: 154px;
   left: calc(50% - 40px);
+  visibility: hidden;
 }
 
 .container {
@@ -122,6 +124,14 @@ ul {
     max-width: 358px;
     height: 540px;
   }
+  
+  .card-strap {
+    visibility: visible;
+  }
+
+  .card-strap-pocket {
+    visibility: visible;
+  }
 
   .avatar {
     margin-top: 14rem;
@@ -156,7 +166,4 @@ ul {
     max-width: 300px;
     margin: 3.2rem auto 0 auto;
   }
-
-  /*TODO: create strap element*/
-  
 }
