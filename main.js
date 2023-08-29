@@ -1,6 +1,6 @@
 const socialMediaUsername = {
   github: 'RSinhoroto',
-  youtube: 'channel/UCgEpL2cJmkpQatNXEyz4pAw',
+  youtube: '@rsinhoroto',
   facebook: '',
   instagram: 'rsinhoroto',
   twitter: 'rsinhoroto',
